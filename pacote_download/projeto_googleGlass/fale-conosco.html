@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        All about Google Glass
+    </title>
+
+    <link rel="stylesheet"  href="_css/estilo.css">
+    <link rel="stylesheet" type="text/css" href="_css/form.css">
+</head>
+<script  src="_javascript/funcoes.js" > </script>
+
+<script type="text/javascript">
+    function calTot(){
+        var qtd =parseInt(document.getElementById('cQuant').value);
+        tot = qtd * 1500;
+        document.getElementById('cTot').value=tot;
+    }
+
+
+</script>
+<body>
+    <div id="interface">
+ <header id="cabecalho">
+        <h1>Google Glass</h1>
+        <h2>A revolução do Google está chegando</h2>
+        
+    
+
+<img id= "icone" src="_imagens/contato.png">
+
+<nav id="menu">
+<h1>Menu Principal</h1>
+ <ul type="disc">
+    <li onmouseover="mdfoto('_imagens/home.png')" onmouseout="mdfoto('_imagens/contato.png')"><a href="index.html">Home</a></li>
+    <li onmouseover="mdfoto('_imagens/especificacoes.png')" onmouseout="mdfoto('_imagens/contato.png')"><a href="specs.html">Especificações</a></li>
+    <li onmouseover="mdfoto('_imagens/fotos.png')" onmouseout="mdfoto('_imagens/contato.png')"><a href="fotos.html">Fotos</a></li>
+    <li onmouseover="mdfoto('_imagens/multimidia.png')" onmouseout="mdfoto('_imagens/contato.png')"><a href="multimidia.html">Multimídia</a></li>
+    <li onmouseover="mdfoto('_imagens/contato.png')" onmouseout="mdfoto('_imagens/contato.png')"><a href="fale-conosco.html">Fale conosco</a></li>
+ </ul>
+</nav>
+
+</header>
+
+<section id="corpoS">
+<article id="notprincipal">
+<header id="artigocab">
+<h3>Fale Conosco > Contato</h3>
+<h1>Formulário de Contato</h1>
+<h2>por Manuel Sérgio</h2>
+<h3 class="dir">Atualizado em 02/Novembro/2019</h3>
+</header>
+
+<form method="post" id="fContato" action="mailto:ManuelSergio2017@gmail.com" oninput="calTot();">
+    <fieldset id="us">
+        <legend>Identificação do Usuário</legend>
+    <p> <label for="cNome">Nome:</label>   <input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="Nome Completo"></p>
+    <p> <label for="cSenha">Senha:</label>  <input type="password" name="tSenha" id="cSenha" size="6" maxlength="6" placeholder="6 Digitos"></p>
+    <p> <label for="cEmail">E-mail:</label>  <input type="E-mail" name="tMail" id="cEmail" size="20" maxlength="30" placeholder="E-mail"></p>
+    <fieldset id="sexo">
+    <legend > Sexo:</legend>
+   
+       <input type="radio" name="tSexo" id="cMas" checked=""> <label for="cMas">Masculino</label> <br> 
+        <input type="radio" name="tSexo" id="cFem">  <label for="cFem">Feminino</label> 
+        </fieldset
+        <p> <label for="cData">Data de Nascimento: </label>  <input type="date" name="tData" id="cData" > </p>
+    
+</fieldset>
+
+<fieldset id="end">
+    <legend>Endereço do Usuário</legend>
+    <p> <label for="cEnd"> Logradouro:</label>  <input type="text" name="tEnd" id="cEnd" size="20" maxlength="20" placeholder="Rua, Ave" >  </p> 
+    <p> <label for="cNum">Número:</label>  <input type="number" name="tNum" id="cNum" min="0" max="1000"> </p> 
+   <p> <label for="cEst"> Provincia: </label> 
+     
+      <select name="tEst" id="cEst">
+        <optgroup label="Sul">
+            <option selected="">Maputo-Cidade</option>
+            <option>Maputo-Provincia</option>
+            <option>Gaza</option>
+            <option>Inhabane</option>
+        </optgroup>
+
+        <optgroup label="Centro">
+            <option>Sofala</option>
+            <option>Manica</option>
+            <option>Zambezia</option>
+        </optgroup>
+
+      </select>
+   </p>  
+   <p> <label for="cCid"> Cidade: </label> <input type="text" name="tCidade" id="cCid" size="20"  maxlength="20" placeholder="Sua Cidade" list="cidades">    </p>
+       
+       <datalist id="cidades">
+           <option>Maputo</option>
+           <option>Matola</option>
+
+       </datalist>
+  
+</fieldset>
+
+<fieldset id="mens">
+    <legend>Mensagem do Usuário</legend>
+    <p> <label for="cUr">Grau de Urgência: Min</label> <input type="range" name="tRang" id="cUr" min="0" max="10" step="2"> Máx</p>
+   <p> <label for="cMen"> Mensagem:</label> <textarea name="tMen" id="cMen" cols="40" rows="5" placeholder="Deixe aqui sua mensagem"> </textarea> > </p>
+    
+</fieldset>
+
+<fieldset id="gg">
+    <legend>Quero um Google Glass</legend>
+    <p> <input type="checkbox" name="tBox" id="cBox" checked="">
+        <label for="cBox"> Gostaria de adquirir um Google Glass quando disponível</label> </p>
+    <p> <label for="cColor">Cor:</label> <input type="color" name="tColor" id="cColor" value="#0000FF"> </p>
+    <p> <label for="cQuant">Quantidade:</label> <input type="number" name="tNumber" id="cQuant" min="0" max="5" value="0"></p>
+    <p> <label for="cTot"> Preço Total:MZN </label><input type="text" name="tTot" id="cTot" readonly="" placeholder="Valor a pagar">  </p>
+
+    </fieldset> 
+<p> 
+
+<input type="image" name="tEnvia" src="_imagens/botao-enviar.png">
+
+</p>
+
+
+</form>
+
+</article>
+</section>
+
+<footer id="rodap">
+<h5>Copyrigth 2019 - by Manuel Sérgio <br>
+    <a href="http:\\Facebook.com\ManuelSergio" target="_blank"><img src="_imagens/Facebook_48px.png" width="40" height="40"></a>  
+    <a href="http:\\www.instagram.com\ManuelSergio" target="_blank"><img src="_imagens/Instagram_48px.png" width="40" height="40"></a>
+
+    <h5>
+
+</div>
+</body>
+</html>

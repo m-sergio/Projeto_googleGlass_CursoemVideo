@@ -1,0 +1,235 @@
+@font-face{
+	font-family: 'logo';
+	src:url("../_fonts/bubblegum-sans-regular.otf");
+}
+
+body{
+	font-family: Arial, sans-serif;
+	background-color: #fff;
+		
+}
+
+p{
+	text-align: justify;
+	text-indent: 50px;
+}
+
+/*Formatcao da Imagem*/
+
+figure.legenda {
+	position: relative;
+	border: 8px solid white;
+	box-shadow: 1px 1px 4px black;
+
+}
+
+figure.legenda img{
+	width: 100%;
+	height: 100%
+}
+
+figure.legenda figcaption{
+    opacity: 0;
+	position: absolute;
+	top: 0px;
+	background-color: rgba(0,0,0,.4);
+	color: white;
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+	transition: opacity 1s;
+
+}
+
+figure.legenda:hover figcaption{
+	opacity: 1;
+
+} 
+/*Formatação do Menu*/
+nav#menu{
+	display: block;
+
+}
+nav#menu ul{
+	list-style: none;
+	text-transform: uppercase;
+	position:absolute;
+	top: 0px;
+	left: 700px
+
+}
+nav#menu li{
+	display: inline-block;
+	background-color: #dddddd;
+	padding: 6px;
+	margin: 4px;
+	transition: background-color 1s;
+}
+nav#menu h1{
+	display: none;
+}
+nav#menu li:hover{
+	background-color: #606060;
+}
+nav#menu a{
+	color: #000000;
+
+}
+
+nav#menu a:hover{
+	color: #ffffff;
+
+}
+
+/*Mundando a imagem para direita*/
+header#cabecalho img#icone{
+	position: absolute;
+	left: 1100px;
+	top: 67px;
+	
+}
+/*Mudando o cabecalho*/
+header#cabecalho{
+	border-bottom: 1px #606060 solid;
+	height: 200PX;
+	background: url(../_imagens/glass-logo-peq.jpg) no-repeat 0px 100px;
+
+}
+
+header#cabecalho h1{
+	font-family: logo, sans-serif;
+	font-size: 30pt;
+	color: #606060;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+	padding: 0px;
+	margin-bottom: 0px;
+}
+
+header#cabecalho h2{
+	font-family: Arial, sans-serif;
+	font-size: 15pt;
+	color: #888888;
+	padding: 0px;
+	margin-top: 0px;
+}
+/*Formatacao da secao*/
+section#corpo{
+	display: block;
+	width: 600px;
+	float: left;
+	border-right: 1px solid #606060;
+	padding-right: 15px;
+
+}
+
+
+
+aside#lateral{
+	display:block; 
+	width: 650px;
+	float: right;
+	background-color: #dddddd;
+	padding: 10px;
+	margin: 10px;
+	margin-left: 5px;
+	padding-left: 25px;
+}
+
+footer#rodap{
+	clear: both;
+	border-top: 1px solid #606060;
+}
+footer#rodap h5{
+	text-align: center;
+	
+}
+
+table#stabela{
+	border: 1px solid #606060;
+	border-spacing: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+
+}
+table#stabela td{
+	border: 1px solid #606060;
+	padding: 10px;
+}
+
+/*Editando as tabelas*/
+
+table#stabela td.ce{
+	color: #ffffff;
+	background-color: #606060;
+	vertical-align: top;
+	font-weight: bold;
+
+}
+table#stabela td.cd{
+	background-color: #cecece;
+}
+
+table#stabela caption{
+	color: #888888;
+	font-size: 10pt;
+	font-weight:bolder;
+
+}
+table#stabela caption span{
+	display: block;
+	float: right;
+	font-size: 8pt;
+	color: #000000;
+	margin-top: 10px;
+}
+
+/*Formatacao de artigos*/
+
+article#notprincipal h2{
+font-size: 13pt;
+color: #606060;
+background-color: #dddddd;
+padding: 5px 0px 5px 10px;
+margin: 10px 0px 10px 0px;
+}
+/*Configuracao de cabelho no artigo*/
+header#artigocab h1{z
+font-family: 'logo', sans-serif;
+font-size: 20pt;
+color: #606060;
+margin-bottom: 0px;
+margin-top: 0px;
+
+}
+
+header#artigocab h2{
+	font-size: 12pt;
+	color: #cecece;
+	background-color: #ffffff;
+	margin: 0px;
+
+
+}
+header#artigocab h3{
+font-size: 12pt;
+color: #606060;
+}
+
+.dir{
+	text-align: right;
+}
+
+aside#lateral h1{
+	font-family: 'logo', sans-serif;
+	font-size: 20pt;
+	color: #606060;
+}
+
+aside#lateral h2{
+	background-color: #606060;
+	font-size: 13pt;
+	color: #ffffff;
+	padding: 5px;
+}
